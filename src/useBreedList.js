@@ -14,6 +14,7 @@ export default function useBreedList(animal) {
     } else {
       requestBreedList();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [animal]);
 
   const requestBreedList = async () => {
